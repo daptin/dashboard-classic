@@ -33,13 +33,13 @@ jobs:
 
       - name: Build
         run: |
-          quasar build -m spa
+          npm run build
 
 
       - uses: actions/upload-artifact@v2
         with:
           name: web-spa
-          path: dist/spa
+          path: dist
       - name: Build and push
         run: |
           docker build -t daptin/dashboard-classic:latest .
