@@ -1,6 +1,6 @@
 # Dashboard classic
 
-This is a dashboard for [Daptin](/daptin/daptin)
+This is a dashboard for [Daptin](https://github.com/daptin/daptin)
 
 ## Try with docker
 
