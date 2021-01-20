@@ -52,6 +52,6 @@ jobs:
         with:
           draft: true
           files: |
-            ./dist/spa
+            ./dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
