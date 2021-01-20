@@ -40,6 +40,9 @@ jobs:
           path: dist
       - name: Build and push
         run: |
+          ls -lah
+          cat Dockerfile
+          ls dist
           docker build -t daptin/dashboard-classic:latest .
           docker login -u="${{ secrets.DOCKER_USERNAME }}" -p="${{ secrets.DOCKER_PASSWORD }}"
           docker push daptin/dashboard-classic:latest
